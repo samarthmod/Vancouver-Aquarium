@@ -1,0 +1,508 @@
+TCPTTestApp-iPad
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist
+cCompileXIB /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib
+cCompileXIB /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib
+cCpResource CorePlotIcon.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png
+cCpResource CorePlotIcon@2x.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png
+cProcessPCH /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch CPTTestApp_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad normal i386
+cGenerateDSYMFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad
+cTouch /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c0000000053119F8A0000000000000198
+t1393663882
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000531EBCE200000000000003B4
+t1394523362
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531EBCF9000000000000019E
+t1394523385
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000531EBCFE0000000000446820
+t1394523390
+s4483104
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000531EBD04000000000088D8C0
+t1394523396
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c00000000531EBD08000000000048F720
+t1394523400
+s4781856
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000531EBD0C0000000001F1DE10
+t1394523404
+s32628240
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp-iPad.LinkFileList
+c000000005324BE4C000000000000026C
+t1394916940
+s620
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o
+t1394916944
+s75244
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o
+t1394916944
+s129300
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o
+t1394916944
+s3252
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app
+t1394916945
+s306
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM
+t2
+s0
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad
+t1394916945
+s1433208
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp_iPadViewController.nib
+t1394916943
+s2482
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png
+t1394916940
+s11120
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png
+t1394916940
+s27783
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist
+t1394916940
+s854
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/MainWindow.nib
+t1394916940
+s1821
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/PkgInfo
+t1394916940
+s8
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/libCorePlot-CocoaTouch.a
+c000000005324BE4C0000000000372280
+t1394916940
+s3613312
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist
+c00000000522492CA00000000000004E2
+t1378128586
+s1250
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib
+c00000000508D6A360000000000002C44
+t1351445046
+s11332
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad_Prefix.pch
+c000000005047E56400000000000000C7
+t1346889060
+s199
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m
+c000000005246CD5A00000000000002A2
+t1380371802
+s674
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m
+c00000000524707D500000000000044F8
+t1380386773
+s17656
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CorePlotIcon.png
+c00000000522492CA0000000000002B70
+t1378128586
+s11120
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CorePlotIcon@2x.png
+c00000000522492CA0000000000006C87
+t1378128586
+s27783
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib
+c000000005047E5640000000000004D59
+t1346889060
+s19801
+
+N/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m
+c000000005246CD5A0000000000000102
+t1380371802
+s258
+
+N/var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch
+t1394916944
+s5374632
+
+CBuild AST from /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m
+r0
+
+CBuild AST from /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m
+r0
+
+CBuild AST from /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciese8f4b4ccf5d4b841^9604bcccf5d4b841^---0#1#1#--18"Check dependencies36"D17FBF40-FCB4-4C90-B953-1217C11C3F86-
+
+CCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416609744.403143
+e416609744.559938
+r1
+xCompileC
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTColor.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTFill.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTImage.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"Compile /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m330"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o Classes/CPTTestApp_iPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler916367d0f5d4b841^cd598fd0f5d4b841^---0#0#1#-19%DVTDocumentLocation2@168"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m0000000000000000^4717"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o Classes/CPTTestApp_iPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-generated-files.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-own-target-headers.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-all-target-headers.hmap -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/include -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources/i386 -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources -F/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator -include /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch -MMD -MT dependencies -MF /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.d --serialize-diagnostics /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.dia -c /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadAppDelegate.m -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o36"F2754AFA-F4AF-4750-85BF-FF7FC2A4AAE2-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416609744.439474
+e416609744.617919
+r1
+xCompileC
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/CorePlot-CocoaTouch.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimationOperation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTDefinitions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnimationPeriod.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAnnotationHostLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTResponder.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificDefines.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxis.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTextStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTTextStylePlatformSpecific.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisLabel.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisSet.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTAxisTitle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTBarPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericDataType.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTBorderedLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTCalendarFormatter.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTColor.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTColorSpace.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTConstraints.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTExceptions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTFill.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTFunctionDataSource.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTGradient.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTGraph.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTGraphHostingView.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTImage.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLayerAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLegend.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLegendEntry.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLimitBand.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLineCap.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTLineStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableLineStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericData.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableNumericData+TypeConversion.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutablePlotRange.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotRange.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableShadow.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTShadow.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTMutableTextStyle.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTNumericData+TypeConversion.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPieChart.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificFunctions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/iPhoneOnly/CPTPlatformSpecificCategories.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPathExtensions.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotArea.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotAreaFrame.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSpace.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSpaceAnnotation.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTPlotSymbol.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTRangePlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTScatterPlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTextLayer.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTheme.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTimeFormatter.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTTradingRangePlot.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTUtilities.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYAxis.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYAxisSet.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYGraph.h
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/framework/Source/CPTXYPlotSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Compile /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m336"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o Classes/CPTTestApp_iPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere09d70d0f5d4b841^a0329ed0f5d4b841^---0#0#1#-19%DVTDocumentLocation2@171"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m0000000000000000^4735"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o Classes/CPTTestApp_iPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-generated-files.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-own-target-headers.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-all-target-headers.hmap -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/include -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources/i386 -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources -F/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator -include /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch -MMD -MT dependencies -MF /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.d --serialize-diagnostics /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.dia -c /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/Classes/CPTTestApp_iPadViewController.m -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o36"3A3654C7-8F20-4D52-AACD-982B4866DACA-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416609744.402471
+e416609744.438818
+r1
+xCompileC
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Compile /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m278"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc55367d0f5d4b841^365870d0f5d4b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m0000000000000000^4569"CompileC /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-generated-files.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-own-target-headers.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-all-target-headers.hmap -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/include -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources/i386 -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources -F/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator -include /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch -MMD -MT dependencies -MF /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.dia -c /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/main.m -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o36"45441854-F305-48CF-884B-0DFFA888A724-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCompileXIB /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib
+s416609740.755868
+e416609743.811251
+r1
+xCompileXIB
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Compiling /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib44"CompileXIB CPTTestApp_iPadViewController.xib5cc6c1ccf5d4b841^57b2cfcff5d4b841^---0#0#1#-19%DVTDocumentLocation2@165"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib0000000000000000^1004"CompileXIB CPTTestApp_iPadViewController.xib    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.2 --output-format human-readable-text --compile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp_iPadViewController.nib /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPadViewController.xib36"7AD68B92-2E93-4633-8A41-7342022A3250-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCompileXIB /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib
+s416609740.755165
+e416609740.967983
+r1
+xCompileXIB
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Compiling /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib25"CompileXIB MainWindow.xibe57cc1ccf5d4b841^64cef7ccf5d4b841^---0#0#1#-19%DVTDocumentLocation2@146"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib0000000000000000^947"CompileXIB MainWindow.xib    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 3.2 --output-format human-readable-text --compile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/MainWindow.nib /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/MainWindow.xib36"745A5A6C-6F2E-4E8F-A029-BF66180FBEB6-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCpResource CorePlotIcon.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png
+s416609740.968687
+e416609740.973091
+r1
+xCpResource
+xCorePlotIcon.png
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection161"Copy /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png188"CpResource CorePlotIcon.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png191df8ccf5d4b841^6825f9ccf5d4b841^---0#0#1#-19%DVTDocumentLocation2@171"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png003428badcffdf42^904"CpResource CorePlotIcon.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon.png    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CorePlotIcon.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app36"EB788FD2-2FF1-48E1-979F-A033DCE6AD1B-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CCpResource CorePlotIcon@2x.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png
+s416609740.973868
+e416609740.976157
+r1
+xCpResource
+xCorePlotIcon@2x.png
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Copy /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png194"CpResource CorePlotIcon@2x.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.pngd26df9ccf5d4b841^2de8f9ccf5d4b841^---0#0#1#-19%DVTDocumentLocation2@174"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png003428badcffdf42^913"CpResource CorePlotIcon@2x.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CorePlotIcon@2x.png    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CorePlotIcon@2x.png /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app36"9A29981F-A77E-47A8-85F4-772E7C6C66B9-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CGenerateDSYMFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad
+s416609745.049358
+e416609745.198791
+r1
+xGenerateDSYMFile
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Generate /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM325"GenerateDSYMFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad8db40cd1f5d4b841^79e532d1f5d4b841^---0#0#1#-19%DVTDocumentLocation2@159"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM003428badcffdf42^1059"GenerateDSYMFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app.dSYM36"5DCBF236-539C-4FF8-889C-E535A9355B71-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CLd /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad normal i386
+s416609744.619155
+e416609745.042387
+r1
+xLd
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad
+xnormal
+xi386
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp-iPad.LinkFileList
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/main.o
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadAppDelegate.o
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp_iPadViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/libCorePlot-CocoaTouch.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libcorecrypto.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_asl.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_configuration.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_malloc.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_platform.dylib
+d/usr/lib/system/libsystem_pthread.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection160"Link /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad174"Ld /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad normal i386c4969ed0f5d4b841^1fdb0ad1f5d4b841^---0#0#1#--2053"Ld /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad normal i386    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export IPHONEOS_DEPLOYMENT_TARGET=3.2    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator -F/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator -filelist /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp-iPad.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -all_load -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=3.2 -framework Foundation -framework UIKit -framework CoreGraphics /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/libCorePlot-CocoaTouch.a -framework QuartzCore -Xlinker -dependency_info -Xlinker /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/Objects-normal/i386/CPTTestApp-iPad_dependency_info.dat -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/CPTTestApp-iPad36"8F558C72-F0E8-4431-8A20-479BBA3CB1A3-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CProcessInfoPlistFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist
+s416609740.715291
+e416609740.754553
+r1
+xProcessInfoPlistFile
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist
+x/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Process /Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist202"ProcessInfoPlistFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist CPTTestApp_iPad-Info.plistb072b8ccf5d4b841^6e85c4ccf5d4b841^---0#0#1#-19%DVTDocumentLocation2@158"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist0000000000000000^1085"ProcessInfoPlistFile /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist CPTTestApp_iPad-Info.plist    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad-Info.plist -genpkginfo /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app/Info.plist36"9906C413-1787-4B1B-904B-F6F340096399-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CProcessPCH /Users/rohitboolchandani/Library/Developer/Xcode/DerivedData/CPTTestApp-iPad-abxopbxyhelbiphkjlucfcfbbuaq/Index/PrecompiledHeaders/CPTTestApp_iPad_Prefix-edokuxlnkcojjqbianhjdhlhynvw_ast/CPTTestApp_iPad_Prefix.pch.pch CPTTestApp_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch CPTTestApp_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s416609743.813386
+e416609744.398178
+r1
+xProcessPCH
+x/var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch
+xCPTTestApp_iPad_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad_Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile CPTTestApp_iPad_Prefix.pch304"ProcessPCH /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch CPTTestApp_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9659d0cff5d4b841^13f265d0f5d4b841^---0#0#1#-19%DVTDocumentLocation2@158"file:///Users/rohitboolchandani/Desktop/Samarth/AirLocate%20Art%20Gallery%20with%20Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad_Prefix.pch0000000000000000^4426"ProcessPCH /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch CPTTestApp_iPad_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/rohitboolchandani/Desktop/Samarth/AirLocate Art Gallery with Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad"    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=3.2 -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-generated-files.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-own-target-headers.hmap -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-all-target-headers.hmap -iquote /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/CPTTestApp-iPad-project-headers.hmap -iquote../../framework -iquote../../framework/.idea -iquote../../framework/iPhoneOnly -iquote../../framework/MacOnly -iquote../../framework/Source -iquote../../framework/TestResources -iquote../../framework/.idea/inspectionProfiles -iquote../../framework/.idea/scopes -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/include -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources/i386 -I/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/CPTTestApp-iPad.build/Debug-iphonesimulator/CPTTestApp-iPad.build/DerivedSources -F/Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator --serialize-diagnostics /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.d -c /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/examples/CPTTestApp-iPad/CPTTestApp_iPad_Prefix.pch -o /var/folders/9x/69bkqc055c716yrrfbqjrw4r0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/CPTTestApp_iPad_Prefix-gtqtizimabrelsalukdyjhozsxmi/CPTTestApp_iPad_Prefix.pch.pch36"6FF13223-A7D2-474F-9AE3-691AC040AC9F-
+bAE4FDAD9-FF3D-472B-9B9E-14AE39D9E8F4
+
+CTouch /Users/rohitboolchandani/Desktop/Samarth/AirLocate\ Art\ Gallery\ with\ Map/CorePlot_1.4/Source/build/Debug-iphonesimulator/CPTTestApp-iPad.app
+r0
+

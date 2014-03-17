@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="ewh-Lq-pZP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UoV-hw-Wya">
+            <objects>
+                <navigationController storyboardIdentifier="rootControl" definesPresentationContext="YES" id="ewh-Lq-pZP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vlf-Qt-Ajt">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Vr-ig-Ll7" kind="relationship" relationship="rootViewController" id="sHz-OL-NdK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQU-7R-NRi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="881"/>
+        </scene>
+        <!--Animation View Controller-->
+        <scene sceneID="tiB-YI-Owh">
+            <objects>
+                <viewController id="Egb-SS-ybV" customClass="ALAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g6M-Ff-gfe"/>
+                        <viewControllerLayoutGuide type="bottom" id="cRg-h6-Ldn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tFm-I4-dDW">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="209-4Z-hVd">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jSz-qO-Jyn"/>
+                    <connections>
+                        <outlet property="webViewAnimation" destination="209-4Z-hVd" id="mkk-l9-Yld"/>
+                        <segue destination="4Vr-ig-Ll7" kind="custom" id="vbM-At-HQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iN7-75-Xox" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629" y="1646"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="fSI-xf-V7y">
+            <objects>
+                <viewController id="rf9-he-TBm" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p08-YY-4mp"/>
+                        <viewControllerLayoutGuide type="bottom" id="T9A-GZ-oQA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8kn-DJ-fkr">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="4Vr-ig-Ll7" kind="custom" id="9Pr-M3-YeS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qc-9M-vPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-343"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZU5-dg-JPK">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" definesPresentationContext="YES" id="4Vr-ig-Ll7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4yC-TR-D9X"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="s5E-DW-LFh">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Qe6-wo-Nqu" kind="relationship" relationship="viewControllers" id="dc1-Xb-X4N"/>
+                        <segue destination="TGr-N2-Arz" kind="relationship" relationship="viewControllers" id="IHO-Nd-4wf"/>
+                        <segue destination="kNj-kS-qnO" kind="relationship" relationship="viewControllers" id="IPr-DW-IeF"/>
+                        <segue destination="7Oy-b3-SQE" kind="relationship" relationship="viewControllers" id="JIa-g0-BIk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gsE-eu-V2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="881"/>
+        </scene>
+        <!--Detail View Controller - Information-->
+        <scene sceneID="Mah-z1-R90">
+            <objects>
+                <viewController storyboardIdentifier="detailController" title="Information" id="vIu-Py-uaO" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3DU-XL-6x0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ccd-ZV-Xl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bPf-E8-yLY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.24999999999999967" contentMode="scaleToFill" fixedFrame="YES" image="blurNew.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CvS-9v-V8x">
+                                <rect key="frame" x="0.0" y="65" width="768" height="501"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" pagingEnabled="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v58-Jd-FQA">
+                                <rect key="frame" x="0.0" y="566" width="768" height="458"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <string key="text">    The Vancouver Aquarium (officially the Vancouver Aquarium Marine Science Centre) is a public aquarium located in Stanley Park in Vancouver, British Columbia, Canada. In addition to being a major tourist attraction for Vancouver, the aquarium is a centre for marine research, conservation and marine animal rehabilitation.
+The Vancouver Aquarium was one of the first facilities to incorporate professional naturalists into the galleries to interpret animal behaviours. Prior to this, at the London Zoo Fish House, naturalists James S. Bowerbank, Dr. E Lankester, Mr D. Mitchell and Philip Henry Gosse (the creator of the word aquarium had regularly held "open house" events, but the Vancouver Aquarium was the first to employ educational naturalists on a full-time basis. Aquarium research projects extend worldwide, and include marine mammal rescue and rehabilitation.
+On August 9, 2010 Prime Minister Stephen Harper and B.C. Premier Gordon Campbell used the aquarium's beluga tank as a backdrop as together they announced capital funding of up to $15 million for the Stanley Park attraction. The province would donate $10 million in funding over the next three years to help pay for a planned expansion of the 54-year-old facility, Premier Gordon Campbell said. Harper added that Ottawa would hand over up to $5 million to the aquarium for infrastructure upgrades.".The aquarium, however, remains a nonprofit organization. The property is owned by the City of Vancouver and rented to the Aquarium for $40,000 a year since 1991 (prior to which it was $1 per year).
+In October 2009 the Vancouver Aquarium was designated as a Coastal America Learning Center by the US Environmental Protection Agency. As the first Learning Center in Canada, this designation is intended to strengthen the Canadian/U.S. partnership for protecting and restoring shared ocean resources. The Vancouver Aquarium currently houses around 300 species of fish, almost 30,000 invertebrates, and 56 species of amphibians and reptiles. They also have around 60 mammals and birds.
+Currently, the Aquarium houses two Pacific White-Sided Dolphins:
+Hana is an approximately 18 year old female dolphin at the Aquarium. She came to the Aquarium with Helen from the Enoshima Aquarium in Japan in 2005 after being rescued from entanglement in a fishing net. She is identified through the fact that her dorsal fin is the most triangular of all the dolphins at the Aquarium.
+Helen is an approximately 24 year old female dolphin at the Aquarium. She came to the Aquarium with Hana from the Enoshima Aquarium, and was also rescued from entanglement in a fishing net. Helen was part of a multi-year and multi-facility research project focusing on metabolic studies while she was at the Enoshima Aquarium, and is part of a pilot project to understand whale echolocation abilities to prevent whales in the future from becoming entangled in fishing nets. She is distinguishable by the fact that her pectoral flippers are partially amputated due to damage from her entanglement, and that her dorsal fin is the most hook shaped of the two.
+
+
+Aurora and her calf Nala, at approximately four weeks old. Nala died unexpectedly June 21, 2010.
+The Aquarium also houses two beluga whales:
+Kavna was estimated to be around 46 years of age at the time of her death. She was distinguishable from the other belugas by the fact that she was the whitest, due to her age. She gave birth at Vancouver Aquarium to a male calf named "Tuaq" however he died around 4 weeks later.
+Aurora is a female beluga and is around 27 years of age. She gave birth first to Qila, Tuvaq (who died in 2005) and recently Nala, who died on June 21 at around 10:15 pm due to coins and foreign matter found in her respiratory tract. "Aurora" is named after the famous northern light Aurora borealis.
+Qila is a female beluga born at the aquarium to mother Aurora and father Nanuq on July 23, 1995 (17 years old). She is the first beluga to be conceived and born in a Canadian aquarium, and is also the first beluga conceived and born in a Canadian aquarium to give birth to a calf. "Qila" means "beluga" in Inuktitut. She gave birth to her first calf Tiqa, who died of heart failure on September 16, 2011. Tiqa's name stands for T-Tuesday, I-Imaq, Q-Qila and A-aurora.</string>
+                                <fontDescription key="fontDescription" name="LucidaHandwriting-Italic" family="Lucida Handwriting" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="woodenBoard.png" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-OD-YuL">
+                                <rect key="frame" x="190" y="381" width="388" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="you.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fvT-ao-Dd0">
+                                <rect key="frame" x="199" y="104" width="371" height="277"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Main Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUa-cZ-U9b">
+                                <rect key="frame" x="234" y="508" width="301" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="39"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Subtitle Value" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfF-E5-usM">
+                                <rect key="frame" x="180" y="458" width="406" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-BoldItalic" family="Palatino" pointSize="52"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LlP-eV-xzg"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="CvS-9v-V8x" id="wEt-4a-6iR"/>
+                        <outlet property="boardImageView" destination="P0d-OD-YuL" id="mIl-0F-VcP"/>
+                        <outlet property="imageView" destination="fvT-ao-Dd0" id="ZPG-UF-8AQ"/>
+                        <outlet property="labelForCountry" destination="PUa-cZ-U9b" id="UIc-1h-QAr"/>
+                        <outlet property="labelForPlace" destination="wfF-E5-usM" id="DuY-ba-yEb"/>
+                        <outlet property="textviewForDetail" destination="v58-Jd-FQA" id="diA-Kh-3rF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7F-gm-UzF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4031" y="-520"/>
+        </scene>
+        <!--Map View Controller - Indoor Positioning-->
+        <scene sceneID="pcZ-c9-B8M">
+            <objects>
+                <viewController title="Indoor Positioning" id="kNj-kS-qnO" customClass="ALMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DrV-2f-7KP"/>
+                        <viewControllerLayoutGuide type="bottom" id="fdg-Ds-I3z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0qC-Cz-mJq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beacons Properties.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jz-Cb-QWB">
+                                <rect key="frame" x="0.0" y="75" width="768" height="898"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="you.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oMr-ZM-xwf">
+                                <rect key="frame" x="425" y="153" width="54" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roximity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy7-F4-so4">
+                                <rect key="frame" x="196" y="877" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-l1-8Pq">
+                                <rect key="frame" x="475" y="850" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H7-ff-3R1">
+                                <rect key="frame" x="202" y="179" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jog-GE-pLY">
+                                <rect key="frame" x="438" y="90" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map.png" id="LIh-R2-Jtw"/>
+                    <connections>
+                        <outlet property="homeMap" destination="4Jz-Cb-QWB" id="1WN-2q-AOT"/>
+                        <outlet property="userLocation" destination="oMr-ZM-xwf" id="cJV-u2-7m9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XpB-2P-R6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3553" y="910"/>
+        </scene>
+        <!--Traffic View Controller - Real Time Analytics-->
+        <scene sceneID="Yk4-dR-xDh">
+            <objects>
+                <viewController title="Real Time Analytics" id="7Oy-b3-SQE" customClass="ALTrafficViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hXR-Us-jj1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rei-Aw-MEP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BFJ-AT-jyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Traffic at Various Beacons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoD-Ax-Dae">
+                                <rect key="frame" x="285" y="919" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="AirMining" image="Analytics.png" id="xRF-w0-pMO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck0-x3-MPl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3537" y="2390"/>
+        </scene>
+        <!--Ranging View Controller - Welcome-->
+        <scene sceneID="XtC-vq-Aen">
+            <objects>
+                <viewController title="Welcome" id="Qe6-wo-Nqu" customClass="APLRangingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Rg-IR-cJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="QdZ-fw-Y3X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bce-kO-2tL">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Aqua Back.png" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-qq-ZG9">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="977"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="161" sectionHeaderHeight="100" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lri-9N-vsu">
+                                <rect key="frame" x="0.0" y="343" width="768" height="634"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="161" id="Qrw-id-bqL" customClass="ALBeaconCellTableViewCell">
+                                        <rect key="frame" x="0.0" y="55" width="768" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.49999999999999961" contentMode="center" tableViewCell="Qrw-id-bqL" id="6cz-jy-Rzo">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="161"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Active.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qgo-JZ-Gfl">
+                                                    <rect key="frame" x="0.0" y="0.0" width="152" height="161"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-dn-PC1">
+                                                    <rect key="frame" x="182" y="20" width="415" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X1-aB-4oI">
+                                                    <rect key="frame" x="182" y="87" width="415" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="imageBeacon" destination="Qgo-JZ-Gfl" id="cfe-Sd-dv6"/>
+                                            <outlet property="lblBeaconInfo" destination="XzM-dn-PC1" id="D46-dG-riG"/>
+                                            <outlet property="lblDistance" destination="8X1-aB-4oI" id="ppm-kx-UPD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qe6-wo-Nqu" id="j7M-Ba-GYB"/>
+                                    <outlet property="delegate" destination="Qe6-wo-Nqu" id="D92-C6-2MN"/>
+                                </connections>
+                            </tableView>
+                            <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aquarium-entrance.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UO6-lx-cQ6">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AquaFish.png" translatesAutoresizingMaskIntoConstraints="NO" id="ytx-FO-pQb">
+                                <rect key="frame" x="301" y="343" width="167" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home.png" id="2Kw-cT-rHt"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="Lri-9N-vsu" id="lHp-6L-uff"/>
+                        <segue destination="vIu-Py-uaO" kind="push" id="Uas-62-yMA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fw-Rg-giC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="-701"/>
+        </scene>
+        <!--Near View Controller - Contextual Information-->
+        <scene sceneID="AKb-KQ-nD7">
+            <objects>
+                <viewController title="Contextual Information" id="TGr-N2-Arz" customClass="APLNearViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5fh-om-wYb"/>
+                        <viewControllerLayoutGuide type="bottom" id="NzR-ep-Ab2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k3I-TG-O5y">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="2tU-HC-SAA">
+                                <rect key="frame" x="0.0" y="54" width="803" height="919"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-ib-ceJ">
+                                        <rect key="frame" x="92" y="879" width="572" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ojr-Gd-NHa">
+                                        <rect key="frame" x="92" y="92" width="572" height="282"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="493-YI-MFD">
+                                        <rect key="frame" x="92" y="460" width="572" height="363"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </webView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkH-IE-F8q">
+                                        <rect key="frame" x="55" y="20" width="633" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAg-jh-BCX">
+                                        <rect key="frame" x="308" y="374" width="186" height="133"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Cxr-af-1a1">
+                                                <rect key="frame" x="75" y="27" width="37" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Found!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRQ-4S-Bmx">
+                                                <rect key="frame" x="66" y="92" width="54" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.936640735" green="1" blue="0.9960367134" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93664073497914113" green="1" blue="0.99603671340033695" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Near Me" image="NearMe.png" id="35Q-57-Gr1"/>
+                    <connections>
+                        <outlet property="activityView" destination="bAg-jh-BCX" id="akU-SZ-e5P"/>
+                        <outlet property="artImage" destination="ojr-Gd-NHa" id="EFE-gV-aFq"/>
+                        <outlet property="artVideo" destination="493-YI-MFD" id="1Xv-d5-0dW"/>
+                        <outlet property="artWiki" destination="Kz6-ib-ceJ" id="myx-an-Uzu"/>
+                        <outlet property="headingLabel" destination="UkH-IE-F8q" id="M4L-uy-7cQ"/>
+                        <outlet property="mainScrollView" destination="2tU-HC-SAA" id="TeH-B2-mP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9JT-0T-vRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="2459"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Active.png" width="40" height="40"/>
+        <image name="Analytics.png" width="48" height="32"/>
+        <image name="Aqua Back.png" width="1024" height="977"/>
+        <image name="AquaFish.png" width="300" height="155"/>
+        <image name="Beacons Properties.png" width="1371" height="771"/>
+        <image name="Home.png" width="48" height="32"/>
+        <image name="Map.png" width="48" height="32"/>
+        <image name="NearMe.png" width="48" height="32"/>
+        <image name="aquarium-entrance.jpg" width="750" height="420"/>
+        <image name="blurNew.jpg" width="750" height="420"/>
+        <image name="woodenBoard.png" width="1198" height="1212"/>
+        <image name="you.jpg" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="sHz-OL-NdK"/>
+    </inferredMetricsTieBreakers>
+</document>
