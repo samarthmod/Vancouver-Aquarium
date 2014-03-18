@@ -30,6 +30,11 @@
 		E93D7A4B18D26BFC00B51463 /* entrance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E93D7A4A18D26BFC00B51463 /* entrance.jpg */; };
 		E93D7A4E18D2781D00B51463 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E93D7A4D18D2781D00B51463 /* Reachability.m */; };
 		E93D7A4F18D27D5500B51463 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E93D7A5118D27D5500B51463 /* Main.storyboard */; };
+		E9527F2618D76468007478A9 /* XYPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = E9527F2518D76468007478A9 /* XYPieChart.m */; };
+		E9527F2D18D8437D007478A9 /* whiteTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9527F2918D8437D007478A9 /* whiteTexture.jpg */; };
+		E9527F2E18D8437D007478A9 /* blueTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9527F2A18D8437D007478A9 /* blueTexture.jpg */; };
+		E9527F3118D84823007478A9 /* darkBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9527F3018D84823007478A9 /* darkBlue.jpg */; };
+		E9527F3318D84938007478A9 /* greenTexture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E9527F3218D84938007478A9 /* greenTexture.jpg */; };
 		E958B75018D4F6B4000568E2 /* ALTrafficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E958B74F18D4F6B4000568E2 /* ALTrafficViewController.m */; };
 		E958B75918D4F912000568E2 /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = E958B75318D4F912000568E2 /* JBBarChartView.m */; };
 		E958B75A18D4F912000568E2 /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = E958B75518D4F912000568E2 /* JBChartView.m */; };
@@ -125,7 +130,7 @@
 		9B20A35D17502BDD009FC97A /* APLCalibrationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLCalibrationCalculator.m; sourceTree = "<group>"; };
 		9B20A35F17553D5C009FC97A /* APLCalibrationEndViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APLCalibrationEndViewController.h; sourceTree = "<group>"; };
 		9B20A36017553D5C009FC97A /* APLCalibrationEndViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APLCalibrationEndViewController.m; sourceTree = "<group>"; };
-		9B59E5B0174E7BF20083A8A5 /* Art Gallery New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Art Gallery New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B59E5B0174E7BF20083A8A5 /* VanAqua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanAqua.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B59E5B3174E7BF20083A8A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9B59E5B5174E7BF20083A8A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9B59E5B7174E7BF20083A8A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +157,12 @@
 		E93D7A4C18D2781D00B51463 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E93D7A4D18D2781D00B51463 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		E93D7A5018D27D5500B51463 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9527F2418D76468007478A9 /* XYPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPieChart.h; sourceTree = "<group>"; };
+		E9527F2518D76468007478A9 /* XYPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYPieChart.m; sourceTree = "<group>"; };
+		E9527F2918D8437D007478A9 /* whiteTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteTexture.jpg; sourceTree = "<group>"; };
+		E9527F2A18D8437D007478A9 /* blueTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blueTexture.jpg; sourceTree = "<group>"; };
+		E9527F3018D84823007478A9 /* darkBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkBlue.jpg; sourceTree = "<group>"; };
+		E9527F3218D84938007478A9 /* greenTexture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = greenTexture.jpg; sourceTree = "<group>"; };
 		E958B74E18D4F6B4000568E2 /* ALTrafficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTrafficViewController.h; sourceTree = "<group>"; };
 		E958B74F18D4F6B4000568E2 /* ALTrafficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTrafficViewController.m; sourceTree = "<group>"; };
 		E958B75218D4F912000568E2 /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
@@ -251,9 +262,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9E8B5E518CFD055004431AA /* QuartzCore.framework in Frameworks */,
 				E9E8B5EB18CFD06D004431AA /* SystemConfiguration.framework in Frameworks */,
 				E9E8B5E718CFD05C004431AA /* Security.framework in Frameworks */,
-				E9E8B5E518CFD055004431AA /* QuartzCore.framework in Frameworks */,
 				E9E8B5E318CFD04B004431AA /* MobileCoreServices.framework in Frameworks */,
 				E9E8B5E118CFD041004431AA /* libz.dylib in Frameworks */,
 				9B658B0C174EA66200271210 /* CoreLocation.framework in Frameworks */,
@@ -286,7 +297,7 @@
 		9B59E5B1174E7BF20083A8A5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B59E5B0174E7BF20083A8A5 /* Art Gallery New.app */,
+				9B59E5B0174E7BF20083A8A5 /* VanAqua.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 		9B59E5B2174E7BF20083A8A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9527F2318D76468007478A9 /* XYPieChart */,
 				E958B75118D4F912000568E2 /* Jawbone - JBChartView */,
 				E9E8B5F018D0003C004431AA /* FacebookSDK.framework */,
 				E9E8B5EA18CFD06D004431AA /* SystemConfiguration.framework */,
@@ -336,6 +348,15 @@
 				E958B78818D611DF000568E2 /* Other */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9527F2318D76468007478A9 /* XYPieChart */ = {
+			isa = PBXGroup;
+			children = (
+				E9527F2418D76468007478A9 /* XYPieChart.h */,
+				E9527F2518D76468007478A9 /* XYPieChart.m */,
+			);
+			path = XYPieChart;
 			sourceTree = "<group>";
 		};
 		E958B75118D4F912000568E2 /* Jawbone - JBChartView */ = {
@@ -495,6 +516,10 @@
 		E958B7BA18D674BB000568E2 /* Regions */ = {
 			isa = PBXGroup;
 			children = (
+				E9527F3218D84938007478A9 /* greenTexture.jpg */,
+				E9527F3018D84823007478A9 /* darkBlue.jpg */,
+				E9527F2918D8437D007478A9 /* whiteTexture.jpg */,
+				E9527F2A18D8437D007478A9 /* blueTexture.jpg */,
 				E958B7CD18D68E35000568E2 /* blur.jpg */,
 				E958B7CB18D68403000568E2 /* aquarium-entrance.jpg */,
 				E958B7C718D67957000568E2 /* seal.jpg */,
@@ -552,7 +577,7 @@
 			);
 			name = AirLocate;
 			productName = AirLocate;
-			productReference = 9B59E5B0174E7BF20083A8A5 /* Art Gallery New.app */;
+			productReference = 9B59E5B0174E7BF20083A8A5 /* VanAqua.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -615,6 +640,7 @@
 				E9E8B5F518D0192E004431AA /* hi.png in Resources */,
 				E958B7AA18D61864000568E2 /* TwitterDown.png in Resources */,
 				E9F6EAD018D6C98500EDA379 /* Aqua Back.png in Resources */,
+				E9527F3118D84823007478A9 /* darkBlue.jpg in Resources */,
 				E9E76FB918D4E2C4002702F4 /* Beacons Properties.png in Resources */,
 				E958B7C118D67651000568E2 /* whale.jpg in Resources */,
 				E958B7A918D61864000568E2 /* Twitter.png in Resources */,
@@ -637,12 +663,14 @@
 				E958B76718D54FB6000568E2 /* button.jpg in Resources */,
 				E9E9F4EE18D19CC500FF834B /* People.png in Resources */,
 				E958B7C018D67651000568E2 /* Beluga.jpg in Resources */,
+				E9527F2D18D8437D007478A9 /* whiteTexture.jpg in Resources */,
 				E958B79718D61834000568E2 /* Exit.png in Resources */,
 				E958B79D18D61842000568E2 /* LoginFieldBG.png in Resources */,
 				E958B7DB18D698F8000568E2 /* Analytics.png in Resources */,
 				E958B7C418D67651000568E2 /* Starfish5.jpg in Resources */,
 				E958B79118D61390000568E2 /* VanAqLogo_highres.jpg in Resources */,
 				9B59E5BE174E7BF20083A8A5 /* InfoPlist.strings in Resources */,
+				E9527F2E18D8437D007478A9 /* blueTexture.jpg in Resources */,
 				E958B7CE18D68E35000568E2 /* blur.jpg in Resources */,
 				E958B78A18D61227000568E2 /* light_gray_texture-t2.jpg in Resources */,
 				E958B79A18D61834000568E2 /* FacebookDown.png in Resources */,
@@ -664,6 +692,7 @@
 				E9642EEE18D3161D00149BD1 /* NewStoryboard.storyboard in Resources */,
 				E958B7A518D61858000568E2 /* SignUpDown.png in Resources */,
 				E958B7C818D67958000568E2 /* seal.jpg in Resources */,
+				E9527F3318D84938007478A9 /* greenTexture.jpg in Resources */,
 				E958B78C18D6123C000568E2 /* light-texture_p.jpg in Resources */,
 				E9F6EAE118D6FD1200EDA379 /* LoginBackground.jpg in Resources */,
 				E9F6EAD218D6CB0800EDA379 /* LaunchImage.png in Resources */,
@@ -698,6 +727,7 @@
 				E958B7AD18D620A7000568E2 /* MyLogInViewController.m in Sources */,
 				E958B75A18D4F912000568E2 /* JBChartView.m in Sources */,
 				9BE35B9D17556F2D00E4C77A /* APLDefaults.m in Sources */,
+				E9527F2618D76468007478A9 /* XYPieChart.m in Sources */,
 				E958B75018D4F6B4000568E2 /* ALTrafficViewController.m in Sources */,
 				E958B75C18D4F912000568E2 /* JBLineChartView.m in Sources */,
 				2810897C177C74F20098FCF6 /* APLProgressTableViewCell.m in Sources */,
@@ -812,7 +842,7 @@
 				GCC_PREFIX_HEADER = "AirLocate/AirLocate-Prefix.pch";
 				INFOPLIST_FILE = "AirLocate/AirLocate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "Art Gallery New";
+				PRODUCT_NAME = VanAqua;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -833,7 +863,7 @@
 				GCC_PREFIX_HEADER = "AirLocate/AirLocate-Prefix.pch";
 				INFOPLIST_FILE = "AirLocate/AirLocate-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				PRODUCT_NAME = "Art Gallery New";
+				PRODUCT_NAME = VanAqua;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
