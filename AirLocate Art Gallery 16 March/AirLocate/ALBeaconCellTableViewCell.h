@@ -14,5 +14,5 @@
 
 @property (weak, nonatomic,readonly) IBOutlet UILabel *lblBeaconInfo;
 @property (weak, nonatomic,readonly) IBOutlet UILabel *lblDistance;
-
+@property (weak, nonatomic, readonly) IBOutlet UIImageView *backImageView;
 @end
