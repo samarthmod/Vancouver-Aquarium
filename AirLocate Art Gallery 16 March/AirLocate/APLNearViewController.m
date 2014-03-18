@@ -9,6 +9,12 @@
 #import "APLNearViewController.h"
 #import "APLDefaults.h"
 
+#define Major_LightBlue          40058
+#define Major_Green         13401
+#define Major_Blue      10177
+#define Major_Roximity      1
+#define Major_Macbook       0
+
 @interface APLNearViewController () <CLLocationManagerDelegate>
 
 @property NSMutableDictionary *beacons;
@@ -17,7 +23,11 @@
 @property CLBeacon *nearBeacon;
 @property CLBeacon *beaconProcossed;
 @property UIActivityIndicatorView *spinner;
+@property NSMutableDictionary *cellInformationDict;
+@property NSMutableArray* arrayForPlaces;
 @property (weak, nonatomic) IBOutlet UIView *activityView;
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
+@property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
 
 @property (weak, nonatomic) IBOutlet UIWebView *artWiki;
 
@@ -46,6 +56,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"SampleData" ofType:@"plist"];
+    NSMutableDictionary *plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
+    self.arrayForPlaces = [plistDict objectForKey:@"Data"];
+    
     self.beacons = [[NSMutableDictionary alloc] init];
     self.beaconProcossed = nil;
     // This location manager will be used to demonstrate how to range beacons.
@@ -59,7 +73,7 @@
     self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
     [self.spinner setCenter:CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)]; // I do this because I'm in landscape mode
     //[self.view addSubview:self.spinner]; // spinner is not visible until started
-    self.navigationController.navigationBar.topItem.title = @"Contextual Informaton";
+    
 }
 
 
@@ -79,14 +93,9 @@
     }
     
     
-    float sizeOfContent = 0;
-    UIView *lLast = self.artWiki;
-    NSInteger wd = lLast.frame.origin.y;
-    NSInteger ht = lLast.frame.size.height;
-    
-    sizeOfContent = wd+ht;
     
     
+    self.navigationController.navigationBar.topItem.title = @"Contextual Informaton";
 }
 
 
@@ -121,56 +130,53 @@
     {
         [allBeacons addObjectsFromArray:regionResult];
     }
-    
-    for (NSNumber *range in @[@(CLProximityNear),@(CLProximityImmediate)])
+    NSLog(@"All beacons: %@",allBeacons);
+    if ([allBeacons count])
     {
-        NSArray *proximityBeacons = [allBeacons filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"proximity = %d", [range intValue]]];
-        NSMutableArray *proxArr = [[NSMutableArray alloc] initWithArray:proximityBeacons];
-        
-        for (int i = 0; i < [proxArr count]; i++)
+        for (int i = 0; i < [allBeacons count]; i++)
         {
-            CLBeacon *tempBeacon = [proximityBeacons objectAtIndex:i];
-            if ([tempBeacon accuracy] > 3.0)
+            CLBeacon *tempBeacon = [allBeacons objectAtIndex:i];
+            if ([tempBeacon accuracy] > 3.0 || [tempBeacon accuracy] == -1)
             {
-                [proxArr removeObject:tempBeacon];
+                [allBeacons removeObject:tempBeacon];
             }
         }
+        self.nearBeacon = [allBeacons objectAtIndex:0];
         
-        if([proximityBeacons count] > 0)
+        NSString *uuidStringBeaconFound = [[self.nearBeacon proximityUUID] UUIDString];
+        NSString *majorBeaconFound = [NSString stringWithFormat:@"%ld",(long)[[self.nearBeacon major] integerValue]];
+        NSString *uniqueID = [NSString stringWithFormat:@"%@%@",uuidStringBeaconFound,majorBeaconFound];
+        
+        
+        NSString *uuidStringBeaconProcessed = [[self.beaconProcossed proximityUUID] UUIDString];
+        NSString *majorBeaconProcessed = [NSString stringWithFormat:@"%ld",(long)[[self.beaconProcossed major] integerValue]];
+        NSString *uniqueIDProcessed = [NSString stringWithFormat:@"%@%@",uuidStringBeaconProcessed,majorBeaconProcessed];
+        
+        
+        
+        if ([uniqueID isEqualToString:uniqueIDProcessed])
         {
-            //[self stopScanning];
-            self.beacons[range] = [proximityBeacons objectAtIndex:0];
-            self.nearBeacon = [proximityBeacons objectAtIndex:0];
-            
-            NSString *uuidStringBeaconFound = [[self.nearBeacon proximityUUID] UUIDString];
-            NSString *majorBeaconFound = [NSString stringWithFormat:@"%ld",(long)[[self.nearBeacon major] integerValue]];
-            NSString *uniqueID = [NSString stringWithFormat:@"%@%@",uuidStringBeaconFound,majorBeaconFound];
-            
-            
-            NSString *uuidStringBeaconProcessed = [[self.beaconProcossed proximityUUID] UUIDString];
-            NSString *majorBeaconProcessed = [NSString stringWithFormat:@"%ld",(long)[[self.beaconProcossed major] integerValue]];
-            NSString *uniqueIDProcessed = [NSString stringWithFormat:@"%@%@",uuidStringBeaconProcessed,majorBeaconProcessed];
-            
-            
-            //NSLog(@"Searched Beacon \n%@\n and previous beacon \n%@\n",uniqueID,uniqueIDProcessed);
-            if ([uniqueID isEqualToString:uniqueIDProcessed])
-            {
-                //do nothing
-            }
-            else
-            {
-                //[self.spinner startAnimating];
-                [self.activityView setHidden:NO];
-                [self provideContextualInformationfor:self.nearBeacon];
-                self.beaconProcossed = self.nearBeacon;
-            }
-            
-            
+            //do nothing
+        }
+        else
+        {
+            //[self.spinner startAnimating];
+            [self.activityView setHidden:NO];
+            [self provideContextualInformationfor:self.nearBeacon];
+            self.beaconProcossed = self.nearBeacon;
         }
     }
     
     
+    
+    
+    
+    
 }
+
+
+
+
 
 - (void)locationManager:(CLLocationManager *)manager rangingBeaconsDidFailForRegion:(CLBeaconRegion *)region
               withError:(NSError *)error
@@ -198,53 +204,106 @@
 {
     if (nearBeacon == self.beaconProcossed)
     {
-        
+        return;
     }
-    else
+//    else
+//    {
+//        Reachability *reach = [Reachability reachabilityForInternetConnection];
+//        
+//        NetworkStatus netStatus = [reach currentReachabilityStatus];
+//        [[APLDefaults sharedDefaults] setLogInActionDone:YES];
+//        if (netStatus == NotReachable)
+//        {
+//            //fetch locally
+//            [self.mainScrollView setAlpha:0.5];
+//            [UIView beginAnimations:nil context:NULL];
+//            [UIView setAnimationDuration: 3.0];
+//            [UIView setAnimationBeginsFromCurrentState:true];
+//            
+//            
+//         
+//            
+//            
+//            self.artImage.image = [UIImage imageNamed:@"artnew.jpg"];
+//            //[self.artVideo loadRequest:[NSURLRequest requestWithURL:videoURL]];
+//            //[self.artWiki loadRequest:[NSURLRequest requestWithURL:wikiURL]];
+//            self.headingLabel.text = @"Local Fetching";
+//            
+//            
+//            NSLog(@"Received update");
+//            //[self.spinner stopAnimating];
+//            
+//            
+//            self.mainScrollView.contentSize = CGSizeMake(self.mainScrollView.frame.size.width, 2000);
+//            [self.mainScrollView setAlpha:1];
+//            [UIView commitAnimations];
+//            [self.activityView setHidden:YES];
+//            
+//        }
+//        else
+//        {
+//            
+//            NSPredicate *predicate = [NSPredicate predicateWithFormat:
+//                                      @"UID = %@ AND Major = %d",[nearBeacon.proximityUUID UUIDString],[[nearBeacon major] integerValue]];
+//            PFQuery *query = [PFQuery queryWithClassName:@"ArtBeacon" predicate:predicate];
+//            [query findObjectsInBackgroundWithTarget:self selector:@selector(callbackWithResult:error:)];
+//        }
+//    }
+    
+    NSString *stringMajor = [NSString stringWithFormat:@"%@",nearBeacon.major];
+    for (int i = 0; i < [self.arrayForPlaces count]; i++)
     {
-        Reachability *reach = [Reachability reachabilityForInternetConnection];
+        NSDictionary *tempDict = [self.arrayForPlaces objectAtIndex:i];
+        NSArray *allValues = [tempDict allValues];
         
-        NetworkStatus netStatus = [reach currentReachabilityStatus];
-        [[APLDefaults sharedDefaults] setLogInActionDone:YES];
-        if (netStatus == NotReachable)
+        if([allValues containsObject:stringMajor])
         {
-            //fetch locally
-            [self.mainScrollView setAlpha:0.5];
-            [UIView beginAnimations:nil context:NULL];
-            [UIView setAnimationDuration: 3.0];
-            [UIView setAnimationBeginsFromCurrentState:true];
+            NSString *frontImageString = [tempDict valueForKey:@"Image"];
+            NSString *backImageString = [tempDict valueForKey:@"backImage"];
+            NSString *regionString = [tempDict valueForKey:@"Country"];
+            NSString *colorString = [tempDict valueForKey:@"Color"];
+            NSString *combinedString = [regionString stringByAppendingFormat:@"- %@",colorString];
+            
+            Reachability *reach = [Reachability reachabilityForInternetConnection];
+            
+            NetworkStatus netStatus = [reach currentReachabilityStatus];
+            
+            if (netStatus != NotReachable)
+            {
+                NSString *videoURLString = [tempDict valueForKey:@"VideoURL"];
+                NSString *wikiURLString = @"http://www.vanaqua.org/";
+                NSURL *videoURL = [NSURL URLWithString:videoURLString];
+                NSURL *wikiURL = [NSURL URLWithString:wikiURLString];
+                [self.artVideo loadRequest:[NSURLRequest requestWithURL:videoURL]];
+                [self.artWiki loadRequest:[NSURLRequest requestWithURL:wikiURL]];
+
+            }
             
             
-         
+            self.artImage.image = [UIImage imageNamed:frontImageString];
+           
+            self.headingLabel.text = combinedString;
+            self.welcomeLabel.text = [@"Welcome to " stringByAppendingFormat:@"%@- %@",regionString,colorString];
+            self.backImageView.image = [UIImage imageNamed:backImageString];
             
-            
-            self.artImage.image = [UIImage imageNamed:@"artnew.jpg"];
-            //[self.artVideo loadRequest:[NSURLRequest requestWithURL:videoURL]];
-            //[self.artWiki loadRequest:[NSURLRequest requestWithURL:wikiURL]];
-            self.headingLabel.text = @"Local Fetching";
-            
-            
-            NSLog(@"Received update");
-            //[self.spinner stopAnimating];
-            
-            
-            self.mainScrollView.contentSize = CGSizeMake(self.mainScrollView.frame.size.width, 2000);
-            [self.mainScrollView setAlpha:1];
-            [UIView commitAnimations];
-            [self.activityView setHidden:YES];
-            
-        }
-        else
-        {
-            
-            NSPredicate *predicate = [NSPredicate predicateWithFormat:
-                                      @"UID = %@ AND Major = %d",[nearBeacon.proximityUUID UUIDString],[[nearBeacon major] integerValue]];
-            PFQuery *query = [PFQuery queryWithClassName:@"ArtBeacon" predicate:predicate];
-            [query findObjectsInBackgroundWithTarget:self selector:@selector(callbackWithResult:error:)];
+            break;
         }
     }
+    self.mainScrollView.contentSize = CGSizeMake(self.mainScrollView.frame.size.width, 2500);
+    [self.mainScrollView setAlpha:1];
     
     
+    
+    [NSTimer scheduledTimerWithTimeInterval:3.5
+                                     target:self
+                                   selector:@selector(targetMethod:)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+- (void) targetMethod:(id)userInfo
+{
+    [self.activityView setHidden:YES];
 }
 
 - (void) callbackWithResult:(NSArray *)result error:(NSError *)error
