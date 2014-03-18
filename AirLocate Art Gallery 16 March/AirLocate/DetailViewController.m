@@ -47,12 +47,13 @@
     self.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@",[self.dictForData objectForKey:@"Image"]]];
 
     [self animateOnEntry];
-    self.navigationController.navigationBar.topItem.title = @"Information";
+
 }
 
 - (void) animateOnEntry
 {
     //set initial frames
+        self.navigationController.navigationBar.topItem.title = @"Information";
     self.backgroundImageView.alpha = 0;
     self.backgroundImageView.frame = CGRectMake(0, self.yOrigin + MAIN_LABEL_Y_ORIGIN, self.view.frame.size.width, self.labelForPlace.frame.size.height + self.labelForCountry.frame.size.height);
     self.labelForPlace.frame = CGRectMake(70, self.yOrigin + MAIN_LABEL_Y_ORIGIN, self.labelForPlace.frame.size.width, self.labelForPlace.frame.size.height);
