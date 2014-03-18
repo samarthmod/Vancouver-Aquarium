@@ -13,6 +13,12 @@
 			<string>Region 1</string>
 			<key>Color</key>
 			<string>Light Blue</string>
+			<key>Major</key>
+			<string>40058</string>
+			<key>backImage</key>
+			<string>blueTexture.jpg</string>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=cec4YPXBnXk</string>
 		</dict>
 		<dict>
 			<key>Image</key>
@@ -23,16 +29,12 @@
 			<string>Region 2</string>
 			<key>Color</key>
 			<string>Green</string>
-		</dict>
-		<dict>
-			<key>Image</key>
-			<string>whale.jpg</string>
-			<key>Place</key>
-			<string>Whale</string>
-			<key>Country</key>
-			<string>Region 3</string>
-			<key>Color</key>
-			<string>White</string>
+			<key>Major</key>
+			<string>13401</string>
+			<key>backImage</key>
+			<string>greenTexture.jpg</string>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=fB3FT3t6_sE</string>
 		</dict>
 		<dict>
 			<key>Image</key>
@@ -43,6 +45,28 @@
 			<string>Region 4</string>
 			<key>Color</key>
 			<string>Dark Blue</string>
+			<key>Major</key>
+			<string>10177</string>
+			<key>backImage</key>
+			<string>darkBlue.jpg</string>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=ZS_6-IwMPjM</string>
+		</dict>
+		<dict>
+			<key>Image</key>
+			<string>whale.jpg</string>
+			<key>Place</key>
+			<string>Whale</string>
+			<key>Country</key>
+			<string>Region 3</string>
+			<key>Color</key>
+			<string>White</string>
+			<key>Major</key>
+			<string>1</string>
+			<key>backImage</key>
+			<string>whiteTexture.jpg</string>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=7piWFKzvW44</string>
 		</dict>
 		<dict>
 			<key>Image</key>
@@ -53,6 +77,12 @@
 			<string>Region 5</string>
 			<key>Color</key>
 			<string>Macbook White</string>
+			<key>Major</key>
+			<string>0</string>
+			<key>backImage</key>
+			<string>whiteTexture.jpg</string>
+			<key>VideoURL</key>
+			<string>https://www.youtube.com/watch?v=ZS_6-IwMPjM</string>
 		</dict>
 		<dict>
 			<key>Image</key>
@@ -62,6 +92,7 @@
 			<key>Country</key>
 			<string>Ireland</string>
 		</dict>
+		<string></string>
 		<dict>
 			<key>Image</key>
 			<string>images-7.jpeg</string>
