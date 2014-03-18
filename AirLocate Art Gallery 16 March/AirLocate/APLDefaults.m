@@ -41,7 +41,7 @@ NSString *BeaconIdentifier = @"com.samarth.ArtGallery";
     // in case of connectivity issues, populate the default UUIDs B9407F30-F5F8-466E-AFF9-25556B57FE6D
     else
     {
-        _supportedProximityUUIDs = @[[[NSUUID alloc] initWithUUIDString:@"8DEEFBB9-F738-4297-8040-96668BB44281"],
+        _supportedProximityUUIDs = @[
                                      [[NSUUID alloc] initWithUUIDString:@"ECABCF8F-23F0-4531-9522-3E75C3A40EA3"],
                                      [[NSUUID alloc] initWithUUIDString:@"D701BBC7-5BE5-4D93-BE07-3F216674D1B9"],
                                      [[NSUUID alloc] initWithUUIDString:@"8492E75F-4FD6-469D-B132-043FE94921D8"],
