@@ -67,7 +67,7 @@
     // Populate the regions we will range once.
     self.rangedRegions = [[NSMutableDictionary alloc] init];
     
-    self.navigationController.navigationBar.topItem.title = @"Indoor Positioning";
+    
     // Do any additional setup after loading the view.
 }
 
@@ -86,7 +86,7 @@
         [self.locationManager startRangingBeaconsInRegion:region];
     }
     
-    
+    self.navigationController.navigationBar.topItem.title = @"Indoor Positioning";
 }
 
 
