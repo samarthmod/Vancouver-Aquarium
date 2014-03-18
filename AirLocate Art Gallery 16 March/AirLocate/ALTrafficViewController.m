@@ -8,6 +8,7 @@
 
 #import "ALTrafficViewController.h"
 #import "JBBarChartView.h"
+#import "XYPieChart.h"
 
 #define Roximity_ObjectID   @"dM4zN00da8"
 #define DarkBlue_ObjectID   @"QUEfntgJB5"
@@ -21,9 +22,9 @@
 #define Major_Roximity      1
 #define Major_Macbook       0
 
-#define Graph_Factor    50
+#define Graph_Factor    100
 
-@interface ALTrafficViewController () <JBBarChartViewDataSource,JBBarChartViewDelegate>
+@interface ALTrafficViewController () <XYPieChartDelegate, XYPieChartDataSource>
 
 @property float roximityTraffic;
 @property float lightBlueTraffic;
@@ -35,10 +36,32 @@
 
 @property JBBarChartView *barChartView;
 @property (strong, nonatomic) IBOutlet UIView *graphBaseView;
+@property (strong, nonatomic) IBOutlet XYPieChart *pieChartRight;
+@property (strong, nonatomic) IBOutlet XYPieChart *pieChartLeft;
+@property (strong, nonatomic) IBOutlet UILabel *percentageLabel;
+@property (strong, nonatomic) IBOutlet UILabel *selectedSliceLabel;
+@property (strong, nonatomic) IBOutlet UITextField *numOfSlices;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *indexOfSlices;
+@property (strong, nonatomic) IBOutlet UIButton *downArrow;
+@property(nonatomic, strong) NSMutableArray *slices;
+@property(nonatomic, strong) NSArray        *sliceColors;
+
+
+- (IBAction)showSlicePercentage:(id)sender;
 
 @end
 
 @implementation ALTrafficViewController
+
+@synthesize pieChartRight = _pieChart;
+@synthesize pieChartLeft = _pieChartCopy;
+@synthesize percentageLabel = _percentageLabel;
+@synthesize selectedSliceLabel = _selectedSlice;
+@synthesize numOfSlices = _numOfSlices;
+@synthesize indexOfSlices = _indexOfSlices;
+@synthesize downArrow = _downArrow;
+@synthesize slices = _slices;
+@synthesize sliceColors = _sliceColors;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,19 +79,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.barChartView = [[JBBarChartView alloc] init];
-    self.barChartView.frame = CGRectMake(100, 100, 500, 800);
-    self.barChartView.delegate = self;
-    self.barChartView.dataSource = self;
+    self.slices = [NSMutableArray arrayWithCapacity:10];
     
-//    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 250, 10)];
-//    UILabel *footerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 250, 50)];
-//    footerLabel.text = @"iBeacons Traffic - Touch the bar to know details";
-//    [tempView addSubview:footerLabel];
-//    self.barChartView.footerView = tempView;
-    [self.view addSubview:self.barChartView];
-    self.navigationController.navigationBar.topItem.title = @"Real Time Analytics";
-    //[self.barChartView reloadData];
+    [self.percentageLabel setHidden:YES];
+    
+    [self.pieChartLeft setDataSource:self];
+    [self.pieChartLeft setStartPieAngle:M_PI_2];
+    [self.pieChartLeft setAnimationSpeed:1.0];
+    [self.pieChartLeft setLabelFont:[UIFont fontWithName:@"DBLCDTempBlack" size:24]];
+    [self.pieChartLeft setLabelRadius:100];
+    [self.pieChartLeft setShowPercentage:YES];
+    [self.pieChartLeft setPieBackgroundColor:[UIColor colorWithWhite:0.95 alpha:1]];
+    [self.pieChartLeft setPieCenter:CGPointMake(240, 240)];
+    [self.pieChartLeft setUserInteractionEnabled:NO];
+    [self.pieChartLeft setLabelShadowColor:[UIColor blackColor]];
+    
+    [self.pieChartRight setDelegate:self];
+    [self.pieChartRight setDataSource:self];
+    [self.pieChartRight setPieCenter:CGPointMake(240, 240)];
+    [self.pieChartRight setShowPercentage:NO];
+    [self.pieChartRight setLabelColor:[UIColor blackColor]];
+    [self.pieChartRight setLabelFont:[UIFont systemFontOfSize:14]];
+    [self.pieChartRight setLabelRadius:110];
+    
+    [self.percentageLabel.layer setCornerRadius:50];
+    
+    self.sliceColors =[NSArray arrayWithObjects:
+                       [UIColor colorWithRed:200/255.0 green:200/255.0 blue:180/255.0 alpha:1],
+                       [UIColor colorWithRed:19/255.0 green:100/255.0 blue:255/255.0 alpha:1],
+                       [UIColor colorWithRed:22/255.0 green:173/255.0 blue:219/255.0 alpha:1],
+                       [UIColor colorWithRed:10/255.0 green:226/255.0 blue:100/255.0 alpha:1],
+                       [UIColor colorWithRed:148/255.0 green:141/255.0 blue:139/255.0 alpha:1],nil];
+    
+    //rotate up arrow
+    self.downArrow.transform = CGAffineTransformMakeRotation(M_PI);
 
     
     // Do any additional setup after loading the view.
@@ -81,66 +125,102 @@
     [self backgroundOperations];
     
     
+    self.navigationController.navigationBar.topItem.title = @"Real Time Analytics";
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [self.percentageLabel setHidden:YES];
+    [_slices removeAllObjects];
 }
 
 - (void) backgroundOperations
 {
-    self.totalTraffic = 0;
+    
     
 
+    Reachability *reach = [Reachability reachabilityForInternetConnection];
     
-    PFQuery *query = [PFQuery queryWithClassName:@"HotSpots"];
-    [query selectKeys:@[@"Major", @"Traffic"]];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error)
+    NetworkStatus netStatus = [reach currentReachabilityStatus];
+    
+    if (netStatus == NotReachable)
     {
-        for (int i = 0; i<[results count]; i++)
+        for(int i = 0; i < 5; i ++)
         {
-            PFObject *tempObj = [results objectAtIndex:i];
-            int major = [[tempObj objectForKey:@"Major"] intValue];
-            switch(major)
-            {
-                case Major_Roximity :
-                    self.roximityTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
-                    self.totalTraffic = self.totalTraffic + self.roximityTraffic;
-                    break;
-                    
-                case Major_LightBlue:
-                    self.lightBlueTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
-                    self.totalTraffic = self.totalTraffic + self.lightBlueTraffic;
-                    break;
-                    
-                case Major_Green:
-                    self.greenTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
-                    self.totalTraffic = self.totalTraffic + self.greenTraffic;
-                    break;
-                case Major_Blue:
-                    self.darkBlueTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
-                    self.totalTraffic = self.totalTraffic + self.darkBlueTraffic;
-                    break;
-                case Major_Macbook:
-                    self.macbookTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
-                    self.totalTraffic = self.totalTraffic + self.macbookTraffic;
-                    break;
-                default:
-                    
-                    break;
-            }
-            
+            NSNumber *one = [NSNumber numberWithInt:rand()%60+20];
+            [_slices addObject:one];
         }
-        [self.barChartView reloadData];
-    }];
+        
+    }
+    else
+    {
+        [_slices removeAllObjects];
+        self.totalTraffic = 0;
+        PFQuery *query = [PFQuery queryWithClassName:@"HotSpots"];
+        [query selectKeys:@[@"Major", @"Traffic"]];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *results, NSError *error)
+         {
+             for (int i = 0; i<[results count]; i++)
+             {
+                 PFObject *tempObj = [results objectAtIndex:i];
+                 int major = [[tempObj objectForKey:@"Major"] intValue];
+                 switch(major)
+                 {
+                     case Major_Roximity :
+                         self.roximityTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
+                         self.totalTraffic = self.totalTraffic + self.roximityTraffic;
+                         break;
+                         
+                     case Major_LightBlue:
+                         self.lightBlueTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
+                         self.totalTraffic = self.totalTraffic + self.lightBlueTraffic;
+                         break;
+                         
+                     case Major_Green:
+                         self.greenTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
+                         self.totalTraffic = self.totalTraffic + self.greenTraffic;
+                         break;
+                     case Major_Blue:
+                         self.darkBlueTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
+                         self.totalTraffic = self.totalTraffic + self.darkBlueTraffic;
+                         break;
+                     case Major_Macbook:
+                         self.macbookTraffic = [[tempObj objectForKey:@"Traffic"] floatValue];
+                         self.totalTraffic = self.totalTraffic + self.macbookTraffic;
+                         break;
+                     default:
+                         
+                         break;
+                 }
+                 
+             }
+             [self.pieChartLeft reloadData];
+             [self.pieChartRight reloadData];
+             [self.percentageLabel setHidden:NO];
+             
+         }];
+    }
+    
+    
     
 }
 
-
-- (NSInteger)numberOfBarsInBarChartView:(JBBarChartView *)barChartView
+- (IBAction)showSlicePercentage:(id)sender
 {
-    return 5; // number of bars in chart
+    UISwitch *perSwitch = (UISwitch *)sender;
+    [self.pieChartRight setShowPercentage:!perSwitch.isOn];
 }
 
-- (CGFloat)barChartView:(JBBarChartView *)barChartView heightForBarViewAtAtIndex:(NSInteger)index
+#pragma mark - XYPieChart Data Source
+
+- (NSUInteger)numberOfSlicesInPieChart:(XYPieChart *)pieChart
 {
-    CGFloat height = 0;
+    return 5;
+}
+
+- (CGFloat)pieChart:(XYPieChart *)pieChart valueForSliceAtIndex:(NSUInteger)index
+{
+    CGFloat height = 0.1f;
     
     if (self.totalTraffic != 0)
     {
@@ -172,10 +252,7 @@
                 
                 break;
         }
-        if(height == 0)
-        {
-            height = 3;
-        }
+        
         NSLog(@"heght %f",height);
         
     }
@@ -183,64 +260,66 @@
     {
         height = 2;
     }
+    int h = (int) height;
+    NSNumber *one = [NSNumber numberWithInt:h];
+    [_slices addObject:one];
     return height;
 }
 
-- (UIColor *)selectionBarColorForBarChartView:(JBBarChartView *)barChartView
+- (UIColor *)pieChart:(XYPieChart *)pieChart colorForSliceAtIndex:(NSUInteger)index
 {
-    return [UIColor lightTextColor]; // color of selection view
+    if(pieChart == self.pieChartRight) return nil;
+    return [self.sliceColors objectAtIndex:(index % self.sliceColors.count)];
 }
 
-- (UIView *)barViewForBarChartView:(JBBarChartView *)barChartView atIndex:(NSInteger)index
+- (NSString *)pieChart:(XYPieChart *)pieChart textForSliceAtIndex:(NSUInteger)index
 {
-    UIView *tempView = [[UIView alloc] init];
-    
-    UILabel *beaconLabel = [[UILabel alloc] init];
-    [beaconLabel setFrame:CGRectMake(10, 0, 150, 25)];
-    
-    UILabel *beaconPercent = [[UILabel alloc] init];
-    [beaconPercent setFrame:CGRectMake(10, 30, 150, 25)];
-    
-    
-    switch(index)
+    NSString *hitsCount;
+    if (pieChart == self.pieChartRight)
     {
-        case 0 :
-            [beaconLabel setText:@"Roximity"];
-            [beaconPercent setText:[NSString stringWithFormat:@"Hits: %.1f",self.roximityTraffic]];
-            tempView.backgroundColor = [UIColor lightGrayColor];
-            break;
-        case 1 :
-            [beaconLabel setText:@"Dark Blue"];
-            [beaconPercent setText:[NSString stringWithFormat:@"Hits: %.1f",self.darkBlueTraffic]];
-            tempView.backgroundColor = [UIColor blueColor];
-            break;
-        case 2 :
-            [beaconLabel setText:@"Light Blue"];
-            [beaconPercent setText:[NSString stringWithFormat:@"Hits: %.1f",self.lightBlueTraffic]];
-            tempView.backgroundColor = [UIColor colorWithRed:0 green:100 blue:100 alpha:1];
-            break;
-        case 3 :
-            [beaconLabel setText:@"Green"];
-            [beaconPercent setText:[NSString stringWithFormat:@"Hits: %.1f",self.greenTraffic]];
-            tempView.backgroundColor = [UIColor greenColor];
-            break;
-        case 4 :
-            [beaconLabel setText:@"Macbook"];
-            [beaconPercent setText:[NSString stringWithFormat:@"Hits: %.1f",self.macbookTraffic]];
-            tempView.backgroundColor = [UIColor brownColor];
-            break;
-        default:
+        if (index == 0)
+        {
+            hitsCount = [NSString stringWithFormat:@"Roximity - %.0f visits",self.roximityTraffic];
             
-            break;
+        }
+        else if (index == 1)
+        {
+            hitsCount = [NSString stringWithFormat:@"Dark Blue - %.0f visits",self.darkBlueTraffic];
+        }
+        else if (index == 2)
+        {
+            hitsCount = [NSString stringWithFormat:@"Light Blue - %.0f visits",self.lightBlueTraffic];
+        }
+        else if (index == 3)
+        {
+            hitsCount = [NSString stringWithFormat:@"Green - %.0f visits",self.greenTraffic];
+        }
+        else if (index == 4)
+        {
+            hitsCount = [NSString stringWithFormat:@"MacBook - %.0f visits",self.macbookTraffic];
+        }
+        else
+        {
+            hitsCount = [NSString stringWithFormat:@"Roximity - %.0f visits",self.roximityTraffic];
+        }
     }
     
     
-    [tempView addSubview:beaconLabel];
-    [tempView addSubview:beaconPercent];
-    NSLog(@"temp View: %@",tempView);
-    
-    return tempView;
+    return hitsCount;
 }
+
+#pragma mark - XYPieChart Delegate
+
+- (void)pieChart:(XYPieChart *)pieChart didSelectSliceAtIndex:(NSUInteger)index
+{
+    NSLog(@"did select slice at index %lu",(unsigned long)index);
+    self.selectedSliceLabel.text = [NSString stringWithFormat:@"Hits Percentage is %@",[self.slices objectAtIndex:index]];
+}
+
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
