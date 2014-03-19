@@ -5,6 +5,8 @@
 #import "LoginViewController.h"
 #import "ALBeaconCellTableViewCell.h"
 #import "DetailViewController.h"
+#import "DropAnimationController.h"
+
 @import CoreLocation;
 
 #define Major_LightBlue_R1          40058    //Region 1
@@ -13,13 +15,15 @@
 #define Major_Roximity_R4      1             //Region 4
 #define Major_Macbook_R5       0             //Region 5
 
-@interface APLRangingViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface APLRangingViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate,UIViewControllerTransitioningDelegate>
 
 @property NSMutableArray *beacons;
 @property CLLocationManager *locationManager;
 @property NSMutableDictionary *rangedRegions;
 @property NSMutableDictionary *cellInformationDict;
 @property NSMutableArray* arrayForPlaces;
+
+@property (nonatomic, strong) id<ADVAnimationController> animationController;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property BOOL rangingShouldStopOnTransition;
@@ -30,6 +34,25 @@
 
 
 @implementation APLRangingViewController
+
+
+#pragma mark - UIViewControllerTransitioningDelegate
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source
+{
+    self.animationController.isPresenting = YES;
+    
+    return self.animationController;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    self.animationController.isPresenting = NO;
+    
+    return self.animationController;
+}
 
 - (void)viewDidLoad
 {
@@ -42,6 +65,8 @@
     
     self.beacons = [[NSMutableArray alloc] init];
     LoginViewController *loginScreen = [[LoginViewController alloc] init];
+    loginScreen.transitioningDelegate  = self;
+    self.animationController = [[DropAnimationController alloc] init];
     [self presentViewController:loginScreen animated:NO completion:NULL];
     // This location manager will be used to demonstrate how to range beacons.
     self.locationManager = [[CLLocationManager alloc] init];
