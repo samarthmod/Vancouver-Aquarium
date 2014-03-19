@@ -99,7 +99,7 @@
     [self.pieChartRight setPieCenter:CGPointMake(240, 240)];
     [self.pieChartRight setShowPercentage:NO];
     [self.pieChartRight setLabelColor:[UIColor blackColor]];
-    [self.pieChartRight setLabelFont:[UIFont systemFontOfSize:14]];
+    [self.pieChartRight setLabelFont:[UIFont systemFontOfSize:13]];
     [self.pieChartRight setLabelRadius:110];
     
     [self.percentageLabel.layer setCornerRadius:50];
