@@ -19,9 +19,9 @@
 
 
 #define Location_Sam_Room_White     CGRectMake(189,891,54,52)
-#define Location_Rohit_Room_LightBlue     CGRectMake(446,741,54,52)
-#define Location_Kitchen_Room_Green     CGRectMake(218,232,54,52)
-#define Location_Hall_Room_Blue     CGRectMake(425,153,54,52)
+#define Location_Rohit_Room_LightBlue     CGRectMake(261,745,81,75) //Entry point 1
+#define Location_Kitchen_Room_Green     CGRectMake(282,481,81,75) //Entry point 2
+#define Location_Hall_Room_Blue     CGRectMake(220,161,81,75) //Entry point 3
 
 #define Roximity_ObjectID   @"dM4zN00da8"
 #define DarkBlue_ObjectID   @"QUEfntgJB5"
@@ -41,6 +41,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *homeMap;
 
 @property (weak, nonatomic) IBOutlet UIImageView *userLocation;
+@property (weak, nonatomic) IBOutlet UIView *searchingView;
 
 @end
 
@@ -123,50 +124,44 @@
     {
         [allBeacons addObjectsFromArray:regionResult];
     }
-    
-    for (NSNumber *range in @[@(CLProximityNear),@(CLProximityImmediate)])
+    for (int i = 0; i < [allBeacons count]; i++)
     {
-        NSArray *proximityBeacons = [allBeacons filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"proximity = %d", [range intValue]]];
-        NSMutableArray *proxArr = [[NSMutableArray alloc] initWithArray:proximityBeacons];
-        
-        for (int i = 0; i < [proxArr count]; i++)
+        CLBeacon *tempBeacon = [allBeacons objectAtIndex:i];
+        if ([tempBeacon accuracy] > 3.0 || [tempBeacon accuracy] == -1)
         {
-            CLBeacon *tempBeacon = [proximityBeacons objectAtIndex:i];
-            if ([tempBeacon accuracy] > 3.0)
-            {
-                [proxArr removeObject:tempBeacon];
-            }
-        }
-        
-        if([proximityBeacons count] > 0)
-        {
-            
-            self.beacons[range] = [proximityBeacons objectAtIndex:0];
-            self.foundBeacon = [proximityBeacons objectAtIndex:0];
-            
-            NSString *uuidStringBeaconFound = [[self.foundBeacon proximityUUID] UUIDString];
-            NSString *majorBeaconFound = [NSString stringWithFormat:@"%ld",(long)[[self.foundBeacon major] integerValue]];
-            NSString *uniqueID = [NSString stringWithFormat:@"%@%@",uuidStringBeaconFound,majorBeaconFound];
-            
-            
-            NSString *uuidStringBeaconProcessed = [[self.beaconProcossed proximityUUID] UUIDString];
-            NSString *majorBeaconProcessed = [NSString stringWithFormat:@"%ld",(long)[[self.beaconProcossed major] integerValue]];
-            NSString *uniqueIDProcessed = [NSString stringWithFormat:@"%@%@",uuidStringBeaconProcessed,majorBeaconProcessed];
-            if ([uniqueID isEqualToString:uniqueIDProcessed])
-            {
-                //do nothing
-            }
-            else
-            {
-                self.beaconProcossed = self.foundBeacon;
-                self.userLocation.hidden = NO;
-                [self provideContextualInformationfor:self.foundBeacon];
-                
-            }
-            
-            
+            [allBeacons removeObject:tempBeacon];
         }
     }
+    
+    if([allBeacons count] > 0)
+    {
+        
+        
+        self.foundBeacon = [allBeacons objectAtIndex:0];
+        
+        NSString *uuidStringBeaconFound = [[self.foundBeacon proximityUUID] UUIDString];
+        NSString *majorBeaconFound = [NSString stringWithFormat:@"%ld",(long)[[self.foundBeacon major] integerValue]];
+        NSString *uniqueID = [NSString stringWithFormat:@"%@%@",uuidStringBeaconFound,majorBeaconFound];
+        
+        
+        NSString *uuidStringBeaconProcessed = [[self.beaconProcossed proximityUUID] UUIDString];
+        NSString *majorBeaconProcessed = [NSString stringWithFormat:@"%ld",(long)[[self.beaconProcossed major] integerValue]];
+        NSString *uniqueIDProcessed = [NSString stringWithFormat:@"%@%@",uuidStringBeaconProcessed,majorBeaconProcessed];
+        if ([uniqueID isEqualToString:uniqueIDProcessed])
+        {
+            self.searchingView.hidden = YES;
+        }
+        else
+        {
+            self.beaconProcossed = self.foundBeacon;
+            self.userLocation.hidden = NO;
+            self.searchingView.hidden = NO;
+            [self provideContextualInformationfor:self.foundBeacon];
+            
+        }
+        
+    }
+   
     
     
 }
@@ -197,7 +192,9 @@
 {
  
     
-    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration: 2.0];
+    [UIView setAnimationBeginsFromCurrentState:true];
     switch([nearBeacon.major integerValue])
     {
         case Major_Roximity :
@@ -226,7 +223,8 @@
             
             break;
     }
-    
+    [UIView commitAnimations];
+    self.searchingView.hidden = YES;
     
 }
 
