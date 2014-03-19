@@ -74,6 +74,7 @@
     [self.spinner setCenter:CGPointMake(self.view.frame.size.width/2.0, self.view.frame.size.height/2.0)]; // I do this because I'm in landscape mode
     //[self.view addSubview:self.spinner]; // spinner is not visible until started
     
+    
 }
 
 
@@ -108,7 +109,7 @@
     {
         [self.locationManager stopRangingBeaconsInRegion:region];
     }
-    self.beaconProcossed = nil;
+    //self.beaconProcossed = nil;
 }
 
 #pragma mark - Location manager delegate
@@ -156,7 +157,7 @@
         
         if ([uniqueID isEqualToString:uniqueIDProcessed])
         {
-            //do nothing
+            self.mainScrollView.contentSize = CGSizeMake(self.mainScrollView.frame.size.width, 2500);
         }
         else
         {
