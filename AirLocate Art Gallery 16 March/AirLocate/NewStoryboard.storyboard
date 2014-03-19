@@ -180,50 +180,58 @@ Qila is a female beluga born at the aquarium to mother Aurora and father Nanuq o
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Beacons Properties.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jz-Cb-QWB">
-                                <rect key="frame" x="0.0" y="75" width="768" height="898"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="VanMap.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Jz-Cb-QWB">
+                                <rect key="frame" x="0.0" y="65" width="768" height="908"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="you.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oMr-ZM-xwf">
-                                <rect key="frame" x="425" y="153" width="54" height="52"/>
+                                <rect key="frame" x="261" y="774" width="81" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roximity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy7-F4-so4">
-                                <rect key="frame" x="196" y="877" width="84" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beaconGreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="8G4-VS-79K">
+                                <rect key="frame" x="438" y="461" width="106" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-l1-8Pq">
-                                <rect key="frame" x="475" y="850" width="84" height="21"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beaconBlue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iEs-VE-0VQ">
+                                <rect key="frame" x="132" y="814" width="105" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3H7-ff-3R1">
-                                <rect key="frame" x="202" y="179" width="84" height="21"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beaconDarkBlue.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OW6-5x-5v2">
+                                <rect key="frame" x="332" y="102" width="104" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dark Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jog-GE-pLY">
-                                <rect key="frame" x="438" y="90" width="84" height="21"/>
+                            </imageView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lok-GL-YYI">
+                                <rect key="frame" x="192" y="450" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="qBF-NN-x0Y">
+                                        <rect key="frame" x="40" y="30" width="20" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Searching..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xut-YF-A1Q">
+                                        <rect key="frame" x="6" y="59" width="89" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="Map.png" id="LIh-R2-Jtw"/>
                     <connections>
                         <outlet property="homeMap" destination="4Jz-Cb-QWB" id="1WN-2q-AOT"/>
+                        <outlet property="searchingView" destination="Lok-GL-YYI" id="BJc-va-ae4"/>
                         <outlet property="userLocation" destination="oMr-ZM-xwf" id="cJV-u2-7m9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XpB-2P-R6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3553" y="910"/>
+            <point key="canvasLocation" x="3571" y="908"/>
         </scene>
         <!--Traffic View Controller - Real Time Analytics-->
         <scene sceneID="Yk4-dR-xDh">
@@ -554,11 +562,14 @@ Qila is a female beluga born at the aquarium to mother Aurora and father Nanuq o
         <image name="Analytics.png" width="48" height="32"/>
         <image name="Aqua Back.png" width="1024" height="977"/>
         <image name="AquaFish.png" width="300" height="155"/>
-        <image name="Beacons Properties.png" width="1371" height="771"/>
         <image name="Home.png" width="48" height="32"/>
         <image name="Map.png" width="48" height="32"/>
         <image name="NearMe.png" width="48" height="32"/>
+        <image name="VanMap.png" width="368" height="421"/>
         <image name="aquarium-entrance.jpg" width="750" height="420"/>
+        <image name="beaconBlue.jpg" width="300" height="300"/>
+        <image name="beaconDarkBlue.jpg" width="1024" height="697"/>
+        <image name="beaconGreen.png" width="336" height="337"/>
         <image name="blue_tone.jpg" width="281" height="180"/>
         <image name="blurNew.jpg" width="750" height="420"/>
         <image name="whiteTexture.jpg" width="1000" height="800"/>
